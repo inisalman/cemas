@@ -10,3 +10,5 @@ create table if not exists public.results (
 );
 alter table public.results enable row level security;
 revoke all on public.results from anon, authenticated;
+
+grant select, insert on public.results to service_role;

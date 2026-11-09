@@ -17,5 +17,6 @@
       "service": "ruang-tenang"
     }
   ],
-  "keep_vars": true
+  "keep_vars": true,
+  "preview_urls": false
 }
