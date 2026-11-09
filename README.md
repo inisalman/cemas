@@ -15,7 +15,7 @@ Form meminta inisial sebelum setiap tes. Hasil baru disimpan setelah seluruh jaw
 
 **Vercel:** impor repository sebagai proyek Next.js. Tambahkan empat variabel dari `.env.example` di Project Settings > Environment Variables, lalu deploy ulang. Gunakan nilai berbeda untuk setiap lingkungan bila memungkinkan. Jangan gunakan prefix `NEXT_PUBLIC_` untuk rahasia.
 
-**Cloudflare:** aplikasi ini memerlukan runtime server untuk Route Handlers, sehingga static export tidak cukup. Integrasi Cloudflare Workers memerlukan adapter dan konfigurasi tambahan; proyek ini belum dikonfigurasi atau diuji untuk Cloudflare. Lihat [panduan Next.js Cloudflare](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/) dan periksa kompatibilitas Next.js 15 sebelum migrasi. Vercel adalah jalur deploy yang lebih langsung untuk kode saat ini.
+**Cloudflare Workers:** proyek menggunakan adapter OpenNext. Atur build command `npm run cf:build` dan deploy command `npm run cf:deploy` pada Workers Builds, lalu tambahkan empat variabel dari `.env.example` sebagai secret runtime. Build adapter dapat diuji lokal dengan `npm run cf:build`. Lihat [panduan OpenNext](https://opennext.js.org/cloudflare/get-started).
 
 ## Data dan akses admin
 
