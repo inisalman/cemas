@@ -1,0 +1,2 @@
+import Quiz from '../components/Quiz';
+export default function PreTest(){return <main className="check-section section"><div className="wrap"><div className="section-kicker"><span>01 / PRE-TEST</span><span>SEBELUM RELAKSASI</span></div><div className="section-heading"><h1 className="page-title">Mari mulai dengan <em>mendengarkan diri.</em></h1><p>Luangkan waktu sebentar untuk menjawab beberapa pertanyaan tentang perasaanmu menjelang operasi.</p></div><Quiz phase="pre"/></div></main>}

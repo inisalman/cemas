@@ -1,0 +1,2 @@
+import Quiz from '../components/Quiz';
+export default function PostTest(){return <main className="check-section section"><div className="wrap"><div className="section-kicker"><span>03 / POST-TEST</span><span>SETELAH RELAKSASI</span></div><div className="section-heading"><h1 className="page-title">Bagaimana perasaanmu <em>sekarang?</em></h1><p>Setelah mencoba relaksasi, luangkan waktu untuk kembali memperhatikan perasaanmu.</p></div><Quiz phase="post"/></div></main>}
